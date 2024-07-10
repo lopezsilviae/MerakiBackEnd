@@ -1,0 +1,72 @@
+{% include 'defaults/head.html' %}
+<body>
+    <!--Barra de Navegacion-->
+    {% include 'defaults/navegacion.html' %}       
+
+     
+    <!-- Trabajos-->
+<section class="trabajos-recientes seccion-clara d-flex flex-column" >
+  <h2 class="seccion-titulo texto-negro">C.R.U.D</h2>
+  <h3 class="seccion-descripcion">Haz click en una imagen</h3>
+
+  <!--Contenedor de Acciones-->
+   <div class="container text-center trabajos-contenedor">
+     <div class="row">
+      <!--Cargar Pedido-->    
+        <a href="cargarPedido"   
+           class="col-12 col-md-6 col-lg-6">
+          <div class="trabajo">
+            <img src="{{url_for('static', filename='/images/grabado.jpg')}}" 
+                alt="Cargar Pedido">
+            <div class="overlay">
+              <p>Cargar Pedido</p>
+            </div>
+          </div>
+        </a>
+
+      <!--Listar Pedidos-->
+        <a href="listarPedidos"  
+           class="col-12 col-md-6 col-lg-6">
+         <div class="trabajo">
+          <img src="{{url_for('static', filename='/images/lampara.jpg')}}" 
+               alt="ListarPedido">
+           <div class="overlay">
+              <p>Listar Pedido</p>
+            </div>
+        </div>
+        </a>  
+      
+      <!--Listar Pedidos Realizados-->
+        <a href="listarPedidosRealizados"  
+           class="col-12 col-md-6 col-lg-6">
+         <div class="trabajo">
+          <img src="{{url_for('static', filename='/images/materiales.jpg')}}" 
+               alt="Listar Pedidos Realizados">
+           <div class="overlay">
+              <p>Listar Pedidos Realizados</p>
+            </div>
+        </div>
+        </a> 
+
+      <!--Stock trabajo 4-->
+         
+        <div class="col-12 col-md-6 col-lg-6">
+        
+         <img src="{{url_for('static', filename='/images/fraseMeraki.jpg')}}">
+          
+       </div>
+         
+        
+     </div>
+   </div>  
+</section>
+
+ <!--Footer-->
+ {% include 'defaults/footer.html' %}
+<!--Scripts-->  
+  <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+
+</body>
+</html>

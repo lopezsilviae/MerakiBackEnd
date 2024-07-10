@@ -1,0 +1,36 @@
+{% include 'defaults/head.html' %}
+<body>
+    
+    {% include 'defaults/navegacion.html' %}      
+<section class="sobre-meraki seccion-nosotros">
+    <section class="container">
+        <h1 class=".badges-contenedor">Listado de Pedidos Realizados</h1>
+
+        <div class="row">
+            <hr>
+            {% for i in pedidos %}
+              
+                <div class="col-10">
+                    <h2 class="h5" title="{{i[2]}}" data-bs-toggle="collapse" href="#dataCollapse{{i[0]}}" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        {{i[1]}}
+                        {{i[2]}}
+                        {{i[3]}}
+                        {{i[4]}}
+                        {{i[6]}} 
+                        {{i[7]}} 
+                        {{i[8]}} 
+                        {{i[9]}} 
+                    </h2>
+            
+
+                </div>
+           
+             
+                <hr>
+            {% endfor%}
+        </div>
+
+    </section>
+</section>   
+{% include 'defaults/scripts.html'%}
+{% include 'defaults/footer.html'%}
