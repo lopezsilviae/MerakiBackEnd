@@ -44,8 +44,8 @@ CREATE TABLE `pedidosproductos` (
 
 LOCK TABLES `pedidosproductos` WRITE;
 /*!40000 ALTER TABLE `pedidosproductos` DISABLE KEYS */;
-insert pedidosproductos (nombre_solicitante,email,telefono,direccion,cp,producto,cantidad,estado)
-values ('Analia', 'analia@hotmail.com',1231234545,'san martin 4589',1245,'llavero',50,'pedido'),('luis','luis@gmail.com','23456789','casa 897',2345,'lampara',7,'realizado'),('ana','luis@gmail.com','23456789','casa 897',2345,'llavero',10,'pedido')(6,'pepe','fff@ppp.com','4545454123','jose per 345',1234,'portaretrato',3,'realizado'),(7,'pedro','pedro@gmail.com','7823234534','castell 67899',2335,'lampara',4,'realizado'),(8,'juan','fff@ppp.com','4545454545','la fayette 12345',4567,'portaretrato',10,'pedido');
+insert into pedidosproductos 
+values (1,'Analia', 'analia@hotmail.com',1231234545,'san martin 4589',1245,'llavero',50,'pedido'),(2,'luis','luis@gmail.com','23456789','casa 897',2345,'lampara',7,'realizado'),(3,'ana','luis@gmail.com','23456789','casa 897',2345,'llavero',10,'pedido'),(6,'pepe','fff@ppp.com','4545454123','jose per 345',1234,'portaretrato',3,'realizado'),(7,'pedro','pedro@gmail.com','7823234534','castell 67899',2335,'lampara',4,'realizado'),(8,'juan','fff@ppp.com','4545454545','la fayette 12345',4567,'portaretrato',10,'pedido');
 
 
 /*!40000 ALTER TABLE `pedidosproductos` ENABLE KEYS */;
